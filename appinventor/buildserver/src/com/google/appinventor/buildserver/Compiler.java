@@ -366,6 +366,9 @@ public final class Compiler {
       for (String permission : permissionsNeeded) {
         out.write("  <uses-permission android:name=\"" + permission + "\" />\n");
       }
+      out.write("  <uses-permission android:name=\"android.permission.CAMERA\" />\n");
+      out.write("  <uses-feature android:name=\"android.hardware.camera\" />\n");
+      out.write("  <uses-feature android:name=\"android.hardware.camera.flash\" />\n");
 
       // The market will use the following to filter apps shown to devices that don't support
       // the specified SDK version.  We right now support building for minSDK 4,

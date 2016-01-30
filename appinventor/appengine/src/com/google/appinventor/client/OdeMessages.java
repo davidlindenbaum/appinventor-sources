@@ -5752,4 +5752,13 @@ public interface OdeMessages extends Messages {
   @Description("")
   String firebaseExperimentalWarning();
 
+  @DefaultMessage("ToggleLight")
+  @Description("")
+  String ToggleLightMethods();
+
+  @DefaultMessage("DrawSegment")
+  @Description("")
+  String DrawSegmentMethods();
+
+
 }
